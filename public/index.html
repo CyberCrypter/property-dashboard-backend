@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Dashboard API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .endpoint {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 4px solid #4CAF50;
+        }
+        .method {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .url {
+            font-family: monospace;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏠 Property Dashboard API</h1>
+        <p>Welcome to the Property Dashboard Backend API. This service provides RESTful endpoints for managing property data.</p>
+        
+        <h2>Available Endpoints:</h2>
+        
+        <div class="endpoint">
+            <span class="method">GET</span> <span class="url">/properties</span>
+            <p>Retrieve all properties</p>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method">POST</span> <span class="url">/properties</span>
+            <p>Add a new property</p>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method">GET</span> <span class="url">/properties/:id</span>
+            <p>Get a specific property by ID</p>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method">PUT</span> <span class="url">/properties/:id</span>
+            <p>Update a property</p>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method">DELETE</span> <span class="url">/properties/:id</span>
+            <p>Delete a property</p>
+        </div>
+        
+        <p><strong>Status:</strong> ✅ API is running successfully!</p>
+    </div>
+</body>
+</html> 
