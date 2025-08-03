@@ -15,4 +15,6 @@ server.use(router);
 
 server.listen(port, '0.0.0.0', () => {
   console.log(`JSON Server is running on port ${port}`);
+  console.log(`API available at: http://localhost:${port}`);
+  console.log(`Properties endpoint: http://localhost:${port}/properties`);
 }); 
